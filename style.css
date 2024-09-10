@@ -1,0 +1,39 @@
+img {
+  width: 500px;  
+}
+h1 {
+  font-family: serif;
+}
+
+a:link {
+  font-family: inherit;
+  
+}
+
+a:visited  {
+  font-size: 15px;
+  color: red;
+  border: solid
+  border-radius: 5px;
+  border-style: double;
+  
+}
+a:hover {
+  font-size: 25px;
+  font-style: oblique;
+  font-family: monospace;
+  color: firebrick;
+  border: solid 5px;
+  border-color: aqua;
+  border-style: ridge;
+  border-radius: 10px;
+}
+a:active {
+  font-size: 20px;
+  color: aquamarine;
+}
+
+img:hover {
+  border: solid 2px;
+  transform: translateY(-15px);
+}
