@@ -1,10 +1,13 @@
 body {background-color: gainsboro;}
+
 h1 {
   font-family: serif;
 }
+
 p {
   font-style: italic;
 }
+
 .container 
 	{
 	width: 90%; 
@@ -15,57 +18,97 @@ p {
 	}
 
 
+header nav li {
+  grid-area: header;
+  margin-right: 15px;
+  display: inline-block;
+  grid-template-columns: 1fr 1fr;
+}
+
+
 img	
 	{
 	max-width: 100%;
-	}
+}
 
-figure
+figure .firstimage
 	{
+  height: auto;
 	width: 45%;
 	min-width: 200px;
-	float: left;
-	}
+  float: left;
+	margin-right: 20px; /* Adds space to the right of the image */
+}
 
-@media screen and (max-width: 1000px)
+figure .secondimage
+	{
+  height: auto;
+	width: 45%;
+	min-width: 200px;
+  float: right;
+  margin-left: 15px;
+}
+
+figure figcaption { /* Figures' captions */
+  font-size: 10px;
+  font-family: monospace;
+  font-style: italic;
+}
+
+section ul {
+  margin-left: 50px; /* Adds space to push bullet points away from the floated image */
+}
+
+section ul li {
+  font-size: 17px /* Default size */
+}
+
+@media screen and (max-width: 800px)
  {
   body {background-color: ghostwhite}
+  section ul li {
+    font-size: 15px; /* Decrease font size */
+  }
  }
 
  @media only screen and (max-width : 480px)
  {
-  body {background-color: brown;}
+  body {background-color: grey;}
+  section ul li {
+    font-size: 13px; /* Decrease font size */
+  }
  }
+ 
 
 a:link {
-  font-family: inherit;
-  
+  font-style: inherit;
+  color: #007BFF;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 a:visited  {
-  font-size: 15px;
-  color: red;
-  border: solid
+  font-size: 20px;
+  color: #6F42C1;
+  border: solid 2px;
   border-radius: 5px;
   border-style: double;
-  
 }
+
 a:hover {
-  font-size: 25px;
-  font-style: oblique;
-  font-family: monospace;
-  color: firebrick;
+  font-weight: bold;
+  font-family: arial;
+  color: #FF5733;
   border: solid 5px;
-  border-color: aqua;
-  border-style: ridge;
-  border-radius: 10px;
+  border-color: solid 2px #6f1e07;
+  border-radius: 5px;
+  padding: 2px 4px;
 }
 a:active {
   font-size: 20px;
-  color: aquamarine;
+  color: #28A745;
 }
 
 img:hover {
   border: solid 2px;
-  transform: translateY(-15px);
 }
