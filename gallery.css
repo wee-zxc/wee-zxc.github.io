@@ -1,3 +1,10 @@
+body {background-color: gainsboro;}
+.container nav ul li {
+  grid-area: header;
+  margin-right: 15px;
+  display: inline-block;
+  grid-template-columns: 1fr 1fr;
+}
 
 .grid-container {
   display: grid;
@@ -26,6 +33,7 @@
   .item5 { grid-column: span 2;}
   .item8 { grid-column: span 2;}
   .item11{ grid-column: span 2;}
+
 .container 
 	{
 	width: 90%; 
@@ -57,6 +65,9 @@
   }
  }
  
+ 
+
+
 
 a:link {
   font-style: inherit;
@@ -64,6 +75,10 @@ a:link {
   font-family: sans-serif;
   font-size: 20px;
 }
+
+a:link .chosenweb {
+  font-weight: bold;
+ }  
 
 a:visited  {
   font-size: 20px;
