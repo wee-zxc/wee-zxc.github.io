@@ -46,7 +46,7 @@ figure .secondimage
 	width: 45%;
 	min-width: 200px;
   float: right;
-  margin-left: 15px;
+  margin-left: 20px;
 }
 
 figure figcaption { /* Figures' captions */
