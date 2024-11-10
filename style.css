@@ -17,6 +17,11 @@ p {
   border: 1px solid black;
 	}
 
+.container1 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; 
+}
 
 header nav li {
   grid-area: header;
