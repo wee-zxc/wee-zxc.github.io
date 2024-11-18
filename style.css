@@ -23,6 +23,63 @@ p {
   margin-right: auto; 
 }
 
+.channels-box {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  row-gap: 5px;
+}
+
+.channels-cards {
+  height: auto;
+  width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:#000000;
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 3px;
+    gap: 2px;
+    padding: 20px;
+}
+
+.channels-headings {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #DCDCDC;
+}
+ 
+div .channels-box > .channels-cards > p {
+  color: #DCDCDC;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+.button:hover {
+  font-family: cursive;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+
+
 header nav li {
   grid-area: header;
   margin-right: 15px;
@@ -85,32 +142,32 @@ section ul li {
  }
  
 
-a:link {
+header > nav > ul > li > a:link {
   font-style: inherit;
   color: #007BFF;
   font-family: sans-serif;
   font-size: 20px;
+  padding: 2px;
+  border-color: white;
 }
 
-a:visited  {
+header > nav > ul > li > a:visited  {
   font-size: 20px;
   color: #6F42C1;
   border: solid 2px;
-  border-radius: 5px;
-  border-style: double;
+  padding: 2px;
 }
 
-a:hover {
-  font-weight: bold;
-  font-family: arial;
-  color: #FF5733;
-  border: solid 5px;
-  border-color: solid 2px #6f1e07;
-  border-radius: 5px;
-  padding: 2px 4px;
-}
-a:active {
+header >nav > ul > li > a:hover {
   font-size: 20px;
+  font-weight: bold;
+  font-style: inherit;
+  font-family: sans-serif;
+  color: #3344ff;
+  padding: 2px;
+}
+header > ul > li > a:active {
+  font-size: 14px;
   color: #28A745;
 }
 
