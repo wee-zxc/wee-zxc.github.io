@@ -17,29 +17,62 @@ p {
   border: 1px solid black;
 	}
 
-.container1 {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto; 
+.section1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
+
+figure .firstimage
+	{
+  height: auto;
+	width: 45%;
+	min-width: 200px;
+}
+
+figure .secondimage
+	{
+  height: auto;
+	width: 45%;
+	min-width: 200px;
+  margin-left: 20px;
+}
+
+figure .thirdimage
+	{
+  height: auto;
+	width: 45%;
+	min-width: 200px;
+  margin-left: 20px;
+}
+
+
+.cat-text1 {
+  flex: 1;
+  text-align: left;
+}
+
 
 .channels-box {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  display: grid;
+  display: flex;
+  flex-wrap: nowrap;
   place-items: center;
   gap: 20px;
   row-gap: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .channels-cards {
   height: auto;
-  width: 50%;
+  width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color:#000000;
+    background-color:#333;
     border: 1px solid rgb(59, 59, 59);
     border-radius: 3px;
     gap: 2px;
@@ -93,23 +126,6 @@ img
 	max-width: 100%;
 }
 
-figure .firstimage
-	{
-  height: auto;
-	width: 45%;
-	min-width: 200px;
-  float: left;
-	margin-right: 20px; /* Adds space to the right of the image */
-}
-
-figure .secondimage
-	{
-  height: auto;
-	width: 45%;
-	min-width: 200px;
-  float: right;
-  margin-left: 20px;
-}
 
 figure figcaption { /* Figures' captions */
   font-size: 10px;
@@ -168,9 +184,22 @@ header >nav > ul > li > a:hover {
 }
 header > ul > li > a:active {
   font-size: 14px;
-  color: #28A745;
+  color: orange;
 }
 
 img:hover {
   border: solid 2px;
+}
+
+footer {
+  background-color: gainsboro;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  color: black;
+  margin: 0;
 }
